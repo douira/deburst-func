@@ -12,16 +12,7 @@
 
 A standard debounce will never fire while triggers keep arriving faster than the interval — useful for "wait until the user stops typing," painful for "I need this to run at least every N milliseconds." A throttle fires at a fixed cadence but doesn't collapse trailing triggers cleanly.
 
-`deburst` is the mix: it waits out quiet gaps like a debounce, but if triggers keep arriving in one continuous burst it caps the wait at a `burstLimit` ceiling and fires anyway. One small function, zero dependencies.
-
-```
-triggers:   ▏▏ ▏▏▏▏▏▏▏▏▏▏▏▏▏▏▏▏▏▏▏▏▏▏▏▏▏▏▏▏           ▏
-            └── burst ────────────────────┘           └─ isolated
-time ───────────────────────────────────────────────────────────▶
-fires:                              ▲     ▲                 ▲
-                                 burstLimit │           burstInterval
-                                      (continuous)       (quiet gap)
-```
+`deburst` is the mix: it waits out quiet gaps like a debounce, but if triggers keep arriving in one continuous burst it caps the wait at a `burstLimit` ceiling and fires anyway.
 
 ## Installation
 
