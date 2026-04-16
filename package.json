@@ -1,6 +1,6 @@
 {
   "name": "deburst-func",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Trailing-edge debounce with a hard time ceiling: collapses bursts into a single call, but guarantees the callback fires within a bounded delay.",
   "keywords": [
     "debounce",

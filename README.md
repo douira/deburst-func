@@ -97,3 +97,7 @@ Runtime support: Node 18+, all evergreen browsers. No runtime dependencies.
 ## License
 
 [Blue Oak Model License 1.0.0](./LICENSE.md)
+
+## AI Disclosure
+
+I wrote this function for another project and wanted to publish it. Claude Code set up the publishing infrastructure and found a bug through automated testing.
